@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Smaller ImageView aligned to the left -->
+    <ImageView
+        android:id="@+id/baudhaimage"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_gravity="start"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kathmandu" />
+
+    <!-- TextView for City Name -->
+    <TextView
+        android:id="@+id/ktmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Kathmandu, Nepal"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- TextView for Description -->
+    <TextView
+        android:id="@+id/badhaDescp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="This is Baudhanath Stupa, religiously popular amongst the Buddhist community and also listed as a world heritage site by UNESCO."
+        android:textColor="#666666"
+        android:textSize="14sp" />
+</LinearLayout>

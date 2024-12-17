@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#51A1ED"
     tools:context=".MainActivity">
 
     <ImageView
@@ -16,6 +16,7 @@
         android:layout_marginTop="66dp"
         android:layout_marginEnd="160dp"
         android:layout_marginBottom="34dp"
+        android:backgroundTint="@color/blue"
         app:layout_constraintBottom_toTopOf="@+id/FullNameId"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,27 +26,31 @@
     <EditText
         android:id="@+id/FullNameId"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginStart="68dp"
         android:layout_marginTop="34dp"
-        android:layout_marginEnd="43dp"
+        android:background="@drawable/drawable_border"
+        android:backgroundTint="@color/white"
         android:ems="10"
-        android:hint="Full Name:"
+        android:hint="Full Name"
         android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColorHint="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <EditText
         android:id="@+id/emailText"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginStart="68dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="43dp"
+        android:background="@drawable/drawable_border"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="Email Id"
         android:inputType="text"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/FullNameId" />
@@ -53,13 +58,17 @@
     <EditText
         android:id="@+id/password1"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginStart="68dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="43dp"
+        android:background="@drawable/drawable_border"
+        android:backgroundTint="@color/white"
         android:ems="10"
+
         android:hint="Password"
         android:inputType="textPassword"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailText" />
@@ -69,11 +78,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="28dp"
+        android:background="@drawable/drawable_border"
+
+        android:backgroundTint="@color/white"
         android:text="Gender"
+        android:textColorHint="@color/black"
         android:textSize="25sp"
         app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password1" />
 
@@ -81,8 +95,8 @@
         android:id="@+id/radioGroup"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="408dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="400dp"
         android:background="@color/white"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,6 +107,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/drawable_border"
+
             android:text="Male" />
 
         <RadioButton
@@ -101,6 +117,7 @@
             android:layout_height="match_parent"
             android:layout_marginStart="40dp"
             android:layout_weight="1"
+            android:background="@drawable/drawable_border"
             android:text="Female" />
 
     </RadioGroup>
@@ -149,11 +166,12 @@
         android:layout_marginStart="158dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="158dp"
+        android:backgroundTint="@color/white"
         android:text="Submit"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkbox" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
